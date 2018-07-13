@@ -1,4 +1,4 @@
-package com.devlhse.main;
+package com.devlhse;
 
 import com.devlhse.view.impl.UIView;
 
