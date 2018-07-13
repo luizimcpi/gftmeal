@@ -1,7 +1,5 @@
 package com.devlhse.enums;
 
-import java.util.Arrays;
-
 public enum DishesNightKeys {
 
 	STEAK("1", "steak"),
@@ -24,11 +22,13 @@ public enum DishesNightKeys {
         return value;
     }
 
-    public static DishesNightKeys getNamefromNightDish(String code) {
-        return Arrays.stream(values())
-                .filter(mv -> mv.key.equals(code))
-                .findFirst()
-                .orElse(null);
+    public static String getNamefromNightDishByKey(String code) {
+        for (DishesNightKeys dishesEnum : DishesNightKeys.values()) {
+            if(dishesEnum.key.equals(code.trim())){
+                return dishesEnum.getValue();
+            }
+        }
+        return "";
     }
     
 }

@@ -1,7 +1,5 @@
 package com.devlhse.enums;
 
-import java.util.Arrays;
-
 public enum DishesMorningKeys {
 	
 	EGGS("1","eggs"),
@@ -25,11 +23,13 @@ public enum DishesMorningKeys {
     }
 
 
-    public static DishesMorningKeys getNamefromMorningDish(String code) {
-        return Arrays.stream(values())
-                .filter(mv -> mv.key.equals(code))
-                .findFirst()
-                .orElse(null);
+    public static String getNamefromMorningDishByKey(String code) {
+        for (DishesMorningKeys dishesEnum : DishesMorningKeys.values()) {
+            if(dishesEnum.key.equals(code.trim())){
+                return dishesEnum.getValue();
+            }
+        }
+        return "";
     }
 
 }
