@@ -8,13 +8,12 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class verificationUtilsTests {
+public class VerificationUtilsTests {
 	
 	@Test
 	public void shouldReturnFalseWhenReceivesValidString() {
 		final String validEntry = "any string here";
 		assertFalse(VerificationUtils.isNullOrEmptyString(validEntry));
-		
 	}
 	
 	@Test
