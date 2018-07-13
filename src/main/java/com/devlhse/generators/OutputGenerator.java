@@ -5,6 +5,8 @@ import com.devlhse.constants.TimeDayConstants;
 import com.devlhse.enums.DishesMorningKeys;
 import com.devlhse.enums.DishesNightKeys;
 
+import java.util.Arrays;
+
 public class OutputGenerator {
     private boolean hasError;
     private String entry;
@@ -24,6 +26,7 @@ public class OutputGenerator {
 
     public OutputGenerator invoke() {
         String[] values = entry.split(GenericKeys.COMMA);
+        values = this.getOrdenatedEntryArray(values);
         output = new StringBuilder();
         int i = 0;
         String timeDay = "";
@@ -53,5 +56,28 @@ public class OutputGenerator {
         }
         hasError = false;
         return this;
+    }
+
+    private String[] getOrdenatedEntryArray(String[] values) {
+        int[] numberValues = new int[values.length-1];
+        int counter = 1;
+        String timeDay = "";
+        for (int ii = 0; ii < numberValues.length; ii++) {
+            numberValues[ii] = Integer.parseInt(values[counter].trim());
+            counter++;
+        }
+        Arrays.sort(numberValues);
+        counter=0;
+        timeDay = values[0];
+        values = new String[values.length];
+        for (String value : values) {
+            if(counter == 0){
+                values[counter] = timeDay;
+            }else{
+                values[counter] = String.valueOf(numberValues[counter-1]);
+            }
+            counter++;
+        }
+        return values;
     }
 }
