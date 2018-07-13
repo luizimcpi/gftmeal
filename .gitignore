@@ -134,5 +134,10 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+# Generated files
+.classpath
+.project
+.settings/
+target/
 
 # End of https://www.gitignore.io/api/eclipse,intellij
