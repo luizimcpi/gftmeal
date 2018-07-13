@@ -1,24 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.devlhse.utils.ConverterUtilTests
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.devlhse.utils.ConverterUtilTests
-shouldReturnValidOutputWithErrorWhenReceivesInvalidEntryForMorning(com.devlhse.utils.ConverterUtilTests)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NumberFormatException: For input string: " 1"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputWithErrorWhenReceivesInvalidEntryForMorning(ConverterUtilTests.java:45)
-
-shouldReturnValidOutputForNightWhenReceivesValidEntryWithNumberOrder(com.devlhse.utils.ConverterUtilTests)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NumberFormatException: For input string: " 1"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputForNightWhenReceivesValidEntryWithNumberOrder(ConverterUtilTests.java:52)
-
-shouldReturnValidOutputForMorningWhenReceivesValidEntryWithoutNumberOrder(com.devlhse.utils.ConverterUtilTests)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NumberFormatException: For input string: " 2"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputForMorningWhenReceivesValidEntryWithoutNumberOrder(ConverterUtilTests.java:59)
-
-shouldReturnValidOutputForNightWhenReceivesValidEntryWithoutNumberOrder(com.devlhse.utils.ConverterUtilTests)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NumberFormatException: For input string: " 2"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputForNightWhenReceivesValidEntryWithoutNumberOrder(ConverterUtilTests.java:66)
-
-shouldReturnValidOutputForMorningWhenReceivesValidEntryWithNumberOrder(com.devlhse.utils.ConverterUtilTests)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NumberFormatException: For input string: " 1"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputForMorningWhenReceivesValidEntryWithNumberOrder(ConverterUtilTests.java:38)
-
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.devlhse.utils.ConverterUtilTests

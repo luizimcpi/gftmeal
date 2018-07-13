@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.devlhse.utils.ConverterUtilTests" time="0.002" tests="9" errors="5" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.devlhse.utils.ConverterUtilTests" time="0.007" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/luiz/dev/workspace-pessoal/gftmeal/target/surefire/surefirebooter780838329182970559.jar /home/luiz/dev/workspace-pessoal/gftmeal/target/surefire 2018-07-13T09-58-41_895-jvmRun1 surefire7591729336136351296tmp surefire_06845480705645230488tmp"/>
+    <property name="sun.java.command" value="/home/luiz/dev/workspace-pessoal/gftmeal/target/surefire/surefirebooter2701660953178939035.jar /home/luiz/dev/workspace-pessoal/gftmeal/target/surefire 2018-07-13T10-22-56_124-jvmRun1 surefire927663151930890399tmp surefire_05396040440634010201tmp"/>
     <property name="surefire.test.class.path" value="/home/luiz/dev/workspace-pessoal/gftmeal/target/test-classes:/home/luiz/dev/workspace-pessoal/gftmeal/target/classes:/home/luiz/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/luiz/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/luiz"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/luiz/dev/workspace-pessoal/gftmeal/target/surefire/surefirebooter780838329182970559.jar"/>
+    <property name="surefire.real.class.path" value="/home/luiz/dev/workspace-pessoal/gftmeal/target/surefire/surefirebooter2701660953178939035.jar"/>
     <property name="sun.boot.class.path" value="/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/lib/resources.jar:/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/lib/rt.jar:/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/lib/sunrsasign.jar:/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/lib/jsse.jar:/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/lib/jce.jar:/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/lib/charsets.jar:/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/lib/jfr.jar:/home/luiz/.sdkman/candidates/java/8.0.161-oracle/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_161-b12"/>
@@ -59,32 +59,12 @@
     <property name="java.class.version" value="52.0"/>
   </properties>
   <testcase name="shouldReturnErrorWhenEntryIsEmpty" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
-  <testcase name="shouldReturnValidOutputWithErrorWhenReceivesInvalidEntryForMorning" classname="com.devlhse.utils.ConverterUtilTests" time="0">
-    <error message="For input string: &quot; 1&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: " 1"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputWithErrorWhenReceivesInvalidEntryForMorning(ConverterUtilTests.java:45)
-</error>
-  </testcase>
-  <testcase name="shouldReturnValidOutputForNightWhenReceivesValidEntryWithNumberOrder" classname="com.devlhse.utils.ConverterUtilTests" time="0">
-    <error message="For input string: &quot; 1&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: " 1"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputForNightWhenReceivesValidEntryWithNumberOrder(ConverterUtilTests.java:52)
-</error>
-  </testcase>
-  <testcase name="shouldReturnValidOutputForMorningWhenReceivesValidEntryWithoutNumberOrder" classname="com.devlhse.utils.ConverterUtilTests" time="0">
-    <error message="For input string: &quot; 2&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: " 2"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputForMorningWhenReceivesValidEntryWithoutNumberOrder(ConverterUtilTests.java:59)
-</error>
-  </testcase>
-  <testcase name="shouldReturnEmptyResultWhenEntryContainsValidTimeOfDay" classname="com.devlhse.utils.ConverterUtilTests" time="0.001"/>
-  <testcase name="shouldReturnValidOutputForNightWhenReceivesValidEntryWithoutNumberOrder" classname="com.devlhse.utils.ConverterUtilTests" time="0">
-    <error message="For input string: &quot; 2&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: " 2"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputForNightWhenReceivesValidEntryWithoutNumberOrder(ConverterUtilTests.java:66)
-</error>
-  </testcase>
+  <testcase name="shouldReturnValidOutputWithErrorWhenReceivesInvalidEntryForMorning" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
+  <testcase name="shouldReturnValidOutputForNightWhenReceivesValidEntryWithNumberOrder" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
+  <testcase name="shouldReturnValidOutputForMorningWhenReceivesValidEntryWithoutNumberOrder" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
+  <testcase name="shouldReturnEmptyResultWhenEntryContainsValidTimeOfDay" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
+  <testcase name="shouldReturnValidOutputForNightWhenReceivesValidEntryWithoutNumberOrder" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
   <testcase name="shouldReturnErrorWhenTimeDayNotPassed" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
-  <testcase name="shouldReturnErrorWhenEntryDoesntContainsAnyValidTimeOfDay" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
-  <testcase name="shouldReturnValidOutputForMorningWhenReceivesValidEntryWithNumberOrder" classname="com.devlhse.utils.ConverterUtilTests" time="0">
-    <error message="For input string: &quot; 1&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: " 1"
-	at com.devlhse.utils.ConverterUtilTests.shouldReturnValidOutputForMorningWhenReceivesValidEntryWithNumberOrder(ConverterUtilTests.java:38)
-</error>
-  </testcase>
+  <testcase name="shouldReturnErrorWhenEntryDoesntContainsAnyValidTimeOfDay" classname="com.devlhse.utils.ConverterUtilTests" time="0.003"/>
+  <testcase name="shouldReturnValidOutputForMorningWhenReceivesValidEntryWithNumberOrder" classname="com.devlhse.utils.ConverterUtilTests" time="0"/>
 </testsuite>

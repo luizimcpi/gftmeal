@@ -8,8 +8,6 @@ import com.devlhse.generators.OutputGenerator;
 
 public class ConverterUtil {
 
-
-
     public static String convertEntry(String entry) {
         if(!VerificationUtils.isNullOrEmptyString(entry)) {
             if (entry.contains(TimeDayConstants.MORNING) || entry.contains(TimeDayConstants.NIGHT)) {
