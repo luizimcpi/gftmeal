@@ -1,6 +1,9 @@
 # gftmeal
 Program that show Dishes for Each time of day.
 
+Build Status Branch Master
+
+[![Build Status](https://travis-ci.org/luizimcpi/gftmeal.svg?branch=master)](https://travis-ci.org/luizimcpi/gftmeal)
 
 ## Build
 
